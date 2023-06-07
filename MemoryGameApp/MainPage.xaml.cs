@@ -14,5 +14,10 @@ namespace MemoryGameApp
         {
             InitializeComponent();
         }
+
+        private void ImgBtn1_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

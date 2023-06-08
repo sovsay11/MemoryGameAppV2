@@ -19,6 +19,14 @@ namespace MemoryGameApp
             "totodile.png",
             "toxapex.png",
             "typhlosion.png",
+            "umbreon.png",
+            "eevee.png",
+            "gardevoir.png",
+            "gengar.png",
+            "pikachu.png",
+            "totodile.png",
+            "toxapex.png",
+            "typhlosion.png",
             "umbreon.png"
         };
 
@@ -60,14 +68,70 @@ namespace MemoryGameApp
             shuffledImageList = images.OrderBy(image => randomGenerator.Next()).ToList();
         }
 
-        private void ImgBtn1_Clicked(object sender, EventArgs e)
+        private async void ImgBtn1_Clicked(object sender, EventArgs e)
         {
+            ImageButton pressedImage = (ImageButton)sender;
 
+            if (pressedImage.Source == null)
+            {
+                pressedImage.Source = shuffledImageList[int.Parse(pressedImage.ClassId)];
+            }
+
+            if (selectedCount == 0)
+            {
+                firstSelection = pressedImage;
+            }
+            else if (selectedCount == 1)
+            {
+                secondSelection = pressedImage;
+            }
+
+            selectedCount++;
+
+            // after we select at least 2 cards
+            if (selectedCount == 2)
+            {
+                GridImages.IsEnabled = false;
+                await Task.Delay(1000);
+                GridImages.IsEnabled = true;
+
+                if ((firstSelection.Source != null && secondSelection.Source != null) && (firstSelection.Source.ToString() == secondSelection.Source.ToString()))
+                {
+                    firstSelection.BackgroundColor = Color.Green;
+                    secondSelection.BackgroundColor = Color.Green;
+
+                    firstSelection.IsEnabled = false;
+                    secondSelection.IsEnabled = false;
+                }
+                else
+                {
+                    firstSelection.Source = null;
+                    secondSelection.Source = null;
+                }
+
+                selectedCount = 0;
+            }
         }
 
         private void BtnReset_Clicked(object sender, EventArgs e)
         {
+            // reset the user's selection
+            firstSelection.Source = null;
+            secondSelection.Source = null;
 
+            // reset the number of cards the user grabbed
+            selectedCount = 0;
+
+            // randomizing the board
+            Random randomGenerator = new Random();
+            shuffledImageList = images.OrderBy(image => randomGenerator.Next()).ToList();
+
+            foreach (var button in imageButtons)
+            {
+                button.Source = null;
+                button.BackgroundColor = Color.White;
+                button.IsEnabled = true;
+            }
         }
     }
 }

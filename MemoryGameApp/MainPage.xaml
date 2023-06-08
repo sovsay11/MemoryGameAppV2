@@ -39,11 +39,183 @@
                              BackgroundColor="White"
                              Clicked="ImgBtn1_Clicked"/>
             </Frame>
-            
+
+            <Frame Grid.Row="0"
+                   Grid.Column="1"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn2"
+                             ClassId="1"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="0"
+                   Grid.Column="2"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn3"
+                             ClassId="2"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="0"
+                   Grid.Column="3"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn4"
+                             ClassId="3"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="1"
+                   Grid.Column="0"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn5"
+                             ClassId="4"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="1"
+                   Grid.Column="1"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn6"
+                             ClassId="5"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="1"
+                   Grid.Column="2"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn7"
+                             ClassId="6"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="1"
+                   Grid.Column="3"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn8"
+                             ClassId="7"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="2"
+                   Grid.Column="0"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn9"
+                             ClassId="8"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="2"
+                   Grid.Column="1"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn10"
+                             ClassId="9"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="2"
+                   Grid.Column="2"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn11"
+                             ClassId="10"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="2"
+                   Grid.Column="3"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn12"
+                             ClassId="11"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="3"
+                   Grid.Column="0"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn13"
+                             ClassId="12"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="3"
+                   Grid.Column="1"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn14"
+                             ClassId="13"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="3"
+                   Grid.Column="2"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn15"
+                             ClassId="14"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
+            <Frame Grid.Row="3"
+                   Grid.Column="3"
+                   Padding="0"
+                   BorderColor="Black">
+                <ImageButton x:Name="ImgBtn16"
+                             ClassId="15"
+                             Margin="1"
+                             BackgroundColor="White"
+                             Clicked="ImgBtn1_Clicked"/>
+            </Frame>
+
         </Grid>
         
         <!--reset button-->
-        <Button/>
+        <Button x:Name="BtnReset"
+                Text="Reset Board"
+                BackgroundColor="LightGray"
+                Margin="10"
+                BorderColor="Black"
+                BorderWidth="1"
+                CornerRadius="10"
+                Clicked="BtnReset_Clicked"/>
 
     </StackLayout>
 
